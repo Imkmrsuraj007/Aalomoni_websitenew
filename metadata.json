@@ -1,0 +1,6 @@
+{
+  "name": "Aalomoni - Kudmali Geet, Articles & Blog Archive",
+  "description": "A digital sanctuary for Kudmali folk songs (Jhumur, Karam, Sohrai, Tusu), in-depth cultural articles, blogs, and vocabulary — dedicated with love as a birthday gift for Aarti Mahato.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

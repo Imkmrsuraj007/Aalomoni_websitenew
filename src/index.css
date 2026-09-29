@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+  }
+  .font-serif {
+    font-family: 'Cormorant Garamond', 'Noto Serif Devanagari', 'Noto Serif Bengali', serif;
+  }
+  .font-sans {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  .font-display {
+    font-family: 'Rozha One', 'Cormorant Garamond', serif;
+  }
+}
+
+/* Subtle traditional earthen pattern backdrop */
+.bg-earthen-texture {
+  background-color: #FDFBF7;
+  background-image: radial-gradient(#d49b3512 1px, transparent 1px), radial-gradient(#c25e3e08 1px, #fdfbf7 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+/* Reading mode parchment background */
+.parchment-canvas {
+  background-color: #FAF6EE;
+  background-image: linear-gradient(to right, rgba(194, 94, 62, 0.02) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(74, 46, 27, 0.02) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle Sohrai border motif */
+.sohrai-border-t {
+  position: relative;
+}
+.sohrai-border-t::before {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    #C25E3E 0,
+    #C25E3E 8px,
+    transparent 8px,
+    transparent 16px,
+    #D49B35 16px,
+    #D49B35 24px,
+    transparent 24px,
+    transparent 32px
+  );
+  opacity: 0.7;
+}
+
+/* Custom scrollbar for clean reading */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D7CABB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BFA992;
+}
